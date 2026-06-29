@@ -32,6 +32,7 @@
       "capacity": 2,
       "ac": false,
       "category": "standart",
+      "basePricePerNight": 900,
       "description": "Çiftler ve bireysel konaklamalar için ferah, düzenli standart odalarımız.",
       "features": ["2 Kişilik", "Klimasız", "TV & Uydu", "Buzdolabı", "Wi-Fi", "Özel Banyo", "24 Saat Sıcak Su"],
       "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80"
@@ -42,6 +43,7 @@
       "capacity": 2,
       "ac": true,
       "category": "konfor",
+      "basePricePerNight": 1200,
       "description": "Yaz aylarında serin bir konaklama için klimalı çift kişilik odalarımız.",
       "features": ["2 Kişilik", "Klima", "TV & Uydu", "Buzdolabı", "Wi-Fi", "Özel Banyo", "24 Saat Sıcak Su"],
       "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80"
@@ -52,6 +54,7 @@
       "capacity": 2,
       "ac": true,
       "category": "manzara",
+      "basePricePerNight": 1500,
       "description": "Şarköy'ün eşsiz deniz manzarasını odanızdan izleyin.",
       "features": ["2 Kişilik", "Klima", "Deniz Manzarası", "Balkon", "TV & Uydu", "Wi-Fi", "Özel Banyo"],
       "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80"
@@ -62,6 +65,7 @@
       "capacity": 3,
       "ac": false,
       "category": "standart",
+      "basePricePerNight": 1100,
       "description": "Küçük aileler ve arkadaş grupları için uygun, geniş 3 kişilik odalar.",
       "features": ["3 Kişilik", "Klimasız", "TV & Uydu", "Buzdolabı", "Wi-Fi", "Özel Banyo", "Ek Yatak"],
       "image": "https://images.unsplash.com/photo-1611892440504-42a988e2363b?w=800&q=80"
@@ -72,6 +76,7 @@
       "capacity": 3,
       "ac": true,
       "category": "konfor",
+      "basePricePerNight": 1400,
       "description": "3 kişilik konforlu odalarımızda klima ile serin ve rahat bir tatil.",
       "features": ["3 Kişilik", "Klima", "TV & Uydu", "Buzdolabı", "Wi-Fi", "Özel Banyo", "Ek Yatak"],
       "image": "https://images.unsplash.com/photo-1590071244566-2c06e2a087e4?w=800&q=80"
@@ -82,6 +87,7 @@
       "capacity": 4,
       "ac": false,
       "category": "aile",
+      "basePricePerNight": 1600,
       "description": "Ailenizle birlikte rahat bir tatil için geniş ve ferah aile odaları.",
       "features": ["4 Kişilik", "Klimasız", "Geniş Alan", "TV & Uydu", "Buzdolabı", "Wi-Fi", "Özel Banyo"],
       "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80"
@@ -92,6 +98,7 @@
       "capacity": 4,
       "ac": true,
       "category": "aile",
+      "basePricePerNight": 1900,
       "description": "Klimalı geniş aile odalarımızda tüm aileniz rahatça konaklayabilir.",
       "features": ["4 Kişilik", "Klima", "Geniş Alan", "TV & Uydu", "Buzdolabı", "Wi-Fi", "Özel Banyo"],
       "image": "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80"
@@ -102,6 +109,7 @@
       "capacity": 4,
       "ac": true,
       "category": "manzara",
+      "basePricePerNight": 1800,
       "description": "Yeşil bahçemize bakan, huzurlu 4 kişilik klimalı odalarımız.",
       "features": ["4 Kişilik", "Klima", "Bahçe Manzarası", "TV & Uydu", "Buzdolabı", "Wi-Fi", "Özel Banyo"],
       "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80"
@@ -112,6 +120,7 @@
       "capacity": 2,
       "ac": false,
       "category": "ekonomik",
+      "basePricePerNight": 750,
       "description": "Bütçe dostu, temiz ve düzenli ekonomik çift kişilik odalarımız.",
       "features": ["2 Kişilik", "Klimasız", "TV & Uydu", "Wi-Fi", "Özel Banyo", "Uygun Fiyat"],
       "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80"
@@ -122,6 +131,7 @@
       "capacity": 3,
       "ac": true,
       "category": "manzara",
+      "basePricePerNight": 1550,
       "description": "Balkonlu 3 kişilik odalarımızda Şarköy havasının tadını çıkarın.",
       "features": ["3 Kişilik", "Klima", "Balkon", "TV & Uydu", "Buzdolabı", "Wi-Fi", "Özel Banyo"],
       "image": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800&q=80"

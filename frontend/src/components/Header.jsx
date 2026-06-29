@@ -5,6 +5,7 @@ const navLinks = [
   { to: '/', label: 'Anasayfa' },
   { to: '/hakkimizda', label: 'Hakkımızda' },
   { to: '/odalar', label: 'Odalar' },
+  { to: '/rezervasyon', label: 'Rezervasyon' },
   { to: '/olanaklar', label: 'Olanaklar' },
   { to: '/galeri', label: 'Galeri' },
   { to: '/yorumlar', label: 'Yorumlar' },

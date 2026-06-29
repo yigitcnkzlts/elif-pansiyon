@@ -56,7 +56,7 @@ export default function Rooms({ rooms, availability }) {
           <span className="section-label">Konaklama</span>
           <h2 className="section-title">Odalarımız</h2>
           <p className="section-desc">
-            Anlık oda durumunu görüntüleyin. Yakında online rezervasyon ve ödeme sistemi aktif olacak.
+            Anlık oda durumunu görüntüleyin. Tarih seçerek online rezervasyon yapabilirsiniz.
           </p>
         </div>
 
@@ -144,8 +144,16 @@ export default function Rooms({ rooms, availability }) {
                     <li key={feature}>{feature}</li>
                   ))}
                 </ul>
+                <p className="room-card__price-from">
+                  {room.basePricePerNight
+                    ? `${new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY', maximumFractionDigits: 0 }).format(room.basePricePerNight)}'den başlayan fiyatlar`
+                    : null}
+                </p>
                 {room.isAvailable ? (
-                  <Link to="/iletisim" className="room-card__link" state={{ roomId: room.id, roomName: room.name }}>
+                  <Link
+                    to={`/rezervasyon?roomId=${room.id}`}
+                    className="room-card__link"
+                  >
                     Rezervasyon Yap →
                   </Link>
                 ) : (
@@ -162,9 +170,10 @@ export default function Rooms({ rooms, availability }) {
           <p className="rooms__empty">Bu filtreye uygun oda bulunamadı.</p>
         )}
 
-        <div className="rooms__coming-soon">
-          <span className="rooms__coming-soon-badge">Yakında</span>
-          <p>Online rezervasyon ve güvenli ödeme sistemi çok yakında hizmetinizde.</p>
+        <div className="rooms__cta">
+          <Link to="/rezervasyon" className="btn btn--primary">
+            Tarih seçerek rezervasyon yap
+          </Link>
         </div>
       </div>
     </section>
