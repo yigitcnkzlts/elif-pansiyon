@@ -12,6 +12,26 @@ export default function AboutStory({ about }) {
             <p className="about-story-layout__lead">
               1974'ten beri aynı adreste, aynı samimiyetle.
             </p>
+
+            <div className="about-story-intro">
+              {about.intro?.map((paragraph, i) => (
+                <p key={i} className="about-story-intro__text">{paragraph}</p>
+              ))}
+            </div>
+
+            {about.hotelFeatures && (
+              <div className="about-hotel-features">
+                {about.hotelFeatures.map((item) => (
+                  <div className="about-hotel-features__item" key={item.title}>
+                    <span className="about-hotel-features__icon">{item.icon}</span>
+                    <div>
+                      <strong>{item.title}</strong>
+                      <span>{item.text}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
           </aside>
 
           <div className="about-story-layout__chapters">

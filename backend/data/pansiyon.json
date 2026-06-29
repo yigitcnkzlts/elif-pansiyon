@@ -1,7 +1,7 @@
 {
   "name": "Elif Pansiyon",
-  "tagline": "Şarköy'ün Kalbinde, Denize Yakın Huzur",
-  "description": "Elif Pansiyon, Şarköy'de denize yakın konumuyla dikkat çeken bir konaklama seçeneğidir. 15 oda ve 30 yatak kapasitesine sahip pansiyonumuz, misafirlerine bahçeli bir ortam sunmaktadır.",
+  "tagline": "Şarköy'ün Kalbinde, Denize Yakın Konforlu Konaklama",
+  "description": "Elif Pansiyon, Şarköy'de denize yürüme mesafesinde yer alan köklü bir aile işletmesidir. 15 odamız ve bahçeli tesisimizle misafirlerimize temiz, ferah ve güvenilir bir otel deneyimi sunuyoruz.",
   "rating": 4.3,
   "reviewCount": 24,
   "address": "Cumhuriyet Mah., Hisar Sok., No:1, Şarköy, Tekirdağ",
@@ -172,6 +172,19 @@
     "youtubeUrl": "https://www.youtube.com/watch?v=YoNQTbY07N4",
     "heritageTitle": "50 Yılı Aşkın Misafirperverlik",
     "heritageSubtitle": "1974'ten bu yana Şarköy'ün kalbinde",
+    "intro": [
+      "Elif Pansiyon, Tekirdağ'ın incisi Şarköy'de denize yürüme mesafesinde konumlanan, aile işletmesi bir konaklama tesisidir. 15 odamız ve 30 yatak kapasitemizle yaz tatilinden hafta sonu kaçamağına kadar her türlü konaklama ihtiyacınıza cevap veriyoruz.",
+      "Odalarımızda TV, uydu yayını, buzdolabı, ücretsiz Wi-Fi ve 24 saat sıcak su standart olarak sunulmaktadır. Klimalı ve klimasız oda seçeneklerimizle 2, 3 ve 4 kişilik konforlu konaklama imkânı sağlıyoruz.",
+      "Yeşil bahçemizde dinlenebilir, Şarköy'ün eşsiz sahillerinde yürüyüş yapabilir, Marmara'nın huzurunu doyasıya yaşayabilirsiniz. Güler yüzlü ekibimiz sizi evinizde hissettirmek için her an hazır."
+    ],
+    "hotelFeatures": [
+      { "icon": "🌊", "title": "Denize Yakın", "text": "Sahile yürüme mesafesinde" },
+      { "icon": "🏨", "title": "15 Oda", "text": "2, 3 ve 4 kişilik seçenekler" },
+      { "icon": "❄️", "title": "Klimalı Odalar", "text": "Yaz konforu için" },
+      { "icon": "📶", "title": "Ücretsiz Wi-Fi", "text": "Tüm odalarda" },
+      { "icon": "🌿", "title": "Bahçe", "text": "Huzurlu yeşil alan" },
+      { "icon": "🕐", "title": "7/24 Açık", "text": "Kesintisiz hizmet" }
+    ],
     "storyChapters": [
       {
         "step": "01",
