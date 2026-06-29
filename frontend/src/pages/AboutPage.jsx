@@ -48,28 +48,6 @@ export default function AboutPage({ data }) {
         </div>
       </section>
 
-      <section className="about-timeline section">
-        <div className="container">
-          <div className="section-header section-header--center">
-            <span className="section-label">Tarihçe</span>
-            <h2 className="section-title">50 Yıllık Yolculuğumuz</h2>
-          </div>
-          <div className="timeline">
-            {about.timeline.map((item, index) => (
-              <div className={`timeline__item ${index % 2 === 0 ? 'timeline__item--left' : 'timeline__item--right'}`} key={item.year}>
-                <div className="timeline__dot" />
-                <div className="timeline__card">
-                  <span className="timeline__year">{item.year}</span>
-                  <h3 className="timeline__title">{item.title}</h3>
-                  <p className="timeline__text">{item.text}</p>
-                </div>
-              </div>
-            ))}
-            <div className="timeline__line" />
-          </div>
-        </div>
-      </section>
-
       <section className="about-values section section--alt">
         <div className="container">
           <div className="section-header section-header--center">

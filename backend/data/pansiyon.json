@@ -195,13 +195,6 @@
       }
     ],
     "quote": "Şarköy değişse de Elif Pansiyon'un kapısındaki sıcaklık hiç değişmedi.",
-    "timeline": [
-      { "year": "1974", "title": "Kuruluş", "text": "Elif Pansiyon, Şarköy Cumhuriyet Mahallesi'nde aile işletmesi olarak kapılarını açtı." },
-      { "year": "1985", "title": "Genişleme", "text": "Artan talep üzerine oda kapasitemiz genişletildi, bahçe düzenlemesi tamamlandı." },
-      { "year": "2000", "title": "Modernizasyon", "text": "Tüm odalara özel banyo, TV ve buzdolabı eklendi. Wi-Fi altyapısı kuruldu." },
-      { "year": "2024", "title": "50. Yıl", "text": "Yarım asırlık misafirperverlik geleneğimizi kutladık. Binlerce mutlu misafir, sayısız güzel anı." },
-      { "year": "Bugün", "title": "Hâlâ Buradayız", "text": "7/24 açık, 15 oda ve 30 yatak kapasitemizle Şarköy'ün en köklü pansiyonlarından biri olmaya devam ediyoruz." }
-    ],
     "images": [
       { "src": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=900&q=80", "alt": "Elif Pansiyon dış görünüm", "caption": "Pansiyonumuzun bahçeli girişi" },
       { "src": "https://images.unsplash.com/photo-1520250497591-112f2f40a3ae?w=900&q=80", "alt": "Şarköy sahil manzarası", "caption": "Denize yürüme mesafesinde" },

@@ -3,7 +3,13 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const userReviewsPath = join(__dirname, '..', 'data', 'user-reviews.json');
+
+function getUserReviewsPath() {
+  if (process.env.VERCEL) {
+    return join('/tmp', 'user-reviews.json');
+  }
+  return join(__dirname, '..', 'data', 'user-reviews.json');
+}
 
 function formatDateTR(dateStr) {
   return new Date(dateStr).toLocaleDateString('tr-TR', {
@@ -14,12 +20,13 @@ function formatDateTR(dateStr) {
 }
 
 export function loadUserReviews() {
+  const userReviewsPath = getUserReviewsPath();
   if (!existsSync(userReviewsPath)) return [];
   return JSON.parse(readFileSync(userReviewsPath, 'utf-8'));
 }
 
 export function saveUserReviews(reviews) {
-  writeFileSync(userReviewsPath, JSON.stringify(reviews, null, 2));
+  writeFileSync(getUserReviewsPath(), JSON.stringify(reviews, null, 2));
 }
 
 export function mergeReviews(staticReviews, userReviews) {
