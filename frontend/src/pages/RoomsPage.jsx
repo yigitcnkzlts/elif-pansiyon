@@ -9,7 +9,7 @@ export default function RoomsPage({ data }) {
         subtitle="Konforlu ve ferah odalarımızda huzurlu bir konaklama"
         image={data.rooms[0]?.image}
       />
-      <Rooms rooms={data.rooms} />
+      <Rooms rooms={data.rooms} availability={data.availability} />
     </>
   );
 }

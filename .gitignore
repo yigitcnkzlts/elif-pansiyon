@@ -5,5 +5,7 @@ build/
 .env.*
 *.log
 backend/data/messages.json
+backend/data/reservations.json
+backend/data/user-reviews.json
 .DS_Store
 Thumbs.db

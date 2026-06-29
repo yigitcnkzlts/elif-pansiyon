@@ -6,10 +6,10 @@ export default function ReviewsPage({ data }) {
     <>
       <PageHero
         title="Misafir Yorumları"
-        subtitle="Sizden gelen değerli görüşler"
+        subtitle="Deneyiminizi paylaşın — yorumunuz anında yayınlanır"
         image={data.gallery[4]}
       />
-      <Reviews reviews={data.reviews} rating={data.rating} reviewCount={data.reviewCount} />
+      <Reviews />
     </>
   );
 }

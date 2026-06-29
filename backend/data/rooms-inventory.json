@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "roomTypeId": 1,
+    "roomNumber": "101",
+    "status": "available"
+  },
+  {
+    "id": 2,
+    "roomTypeId": 1,
+    "roomNumber": "102",
+    "status": "occupied"
+  },
+  {
+    "id": 3,
+    "roomTypeId": 2,
+    "roomNumber": "103",
+    "status": "occupied"
+  },
+  {
+    "id": 4,
+    "roomTypeId": 2,
+    "roomNumber": "104",
+    "status": "occupied"
+  },
+  {
+    "id": 5,
+    "roomTypeId": 3,
+    "roomNumber": "105",
+    "status": "available"
+  },
+  {
+    "id": 6,
+    "roomTypeId": 4,
+    "roomNumber": "106",
+    "status": "occupied"
+  },
+  {
+    "id": 7,
+    "roomTypeId": 4,
+    "roomNumber": "107",
+    "status": "available"
+  },
+  {
+    "id": 8,
+    "roomTypeId": 5,
+    "roomNumber": "108",
+    "status": "available"
+  },
+  {
+    "id": 9,
+    "roomTypeId": 5,
+    "roomNumber": "109",
+    "status": "available"
+  },
+  {
+    "id": 10,
+    "roomTypeId": 6,
+    "roomNumber": "201",
+    "status": "occupied"
+  },
+  {
+    "id": 11,
+    "roomTypeId": 6,
+    "roomNumber": "202",
+    "status": "occupied"
+  },
+  {
+    "id": 12,
+    "roomTypeId": 7,
+    "roomNumber": "203",
+    "status": "occupied"
+  },
+  {
+    "id": 13,
+    "roomTypeId": 8,
+    "roomNumber": "204",
+    "status": "available"
+  },
+  {
+    "id": 14,
+    "roomTypeId": 9,
+    "roomNumber": "205",
+    "status": "available"
+  },
+  {
+    "id": 15,
+    "roomTypeId": 10,
+    "roomNumber": "206",
+    "status": "occupied"
+  }
+]
