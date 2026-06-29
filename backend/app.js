@@ -8,6 +8,9 @@ import { getAllReviews, addUserReview } from './services/reviews.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// Vercel Services: /api prefix is stripped before forwarding to Express
+const api = (path) => (process.env.VERCEL ? path : `/api${path}`);
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -35,7 +38,7 @@ function saveJson(name, data) {
   writeFileSync(dataFile(name), JSON.stringify(data, null, 2));
 }
 
-app.get('/api/pansiyon', (_req, res) => {
+app.get(api('/pansiyon'), (_req, res) => {
   const data = loadPansiyon();
   const summary = getAvailabilitySummary(data.rooms);
   res.json({
@@ -50,22 +53,22 @@ app.get('/api/pansiyon', (_req, res) => {
   });
 });
 
-app.get('/api/rooms', (_req, res) => {
+app.get(api('/rooms'), (_req, res) => {
   const data = loadPansiyon();
   res.json(enrichRoomTypes(data.rooms));
 });
 
-app.get('/api/rooms/availability', (_req, res) => {
+app.get(api('/rooms/availability'), (_req, res) => {
   const data = loadPansiyon();
   res.json(getAvailabilitySummary(data.rooms));
 });
 
-app.get('/api/reviews', (_req, res) => {
+app.get(api('/reviews'), (_req, res) => {
   const data = loadPansiyon();
   res.json(getAllReviews(data.reviews));
 });
 
-app.post('/api/reviews', (req, res) => {
+app.post(api('/reviews'), (req, res) => {
   const { author, rating, text } = req.body;
 
   if (!author?.trim() || !text?.trim()) {
@@ -104,11 +107,11 @@ app.post('/api/reviews', (req, res) => {
   });
 });
 
-app.get('/api/reservations', (_req, res) => {
+app.get(api('/reservations'), (_req, res) => {
   res.json(loadJson('reservations.json'));
 });
 
-app.post('/api/reservations', (req, res) => {
+app.post(api('/reservations'), (req, res) => {
   const { roomTypeId, guestName, guestPhone, guestEmail, checkIn, checkOut, guests } = req.body;
 
   if (!roomTypeId || !guestName || !guestPhone || !checkIn || !checkOut) {
@@ -158,11 +161,11 @@ app.post('/api/reservations', (req, res) => {
   });
 });
 
-app.get('/api/health', (_req, res) => {
+app.get(api('/health'), (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
-app.post('/api/contact', (req, res) => {
+app.post(api('/contact'), (req, res) => {
   const { name, email, phone, message, checkIn, checkOut } = req.body;
 
   if (!name || !phone || !message) {
